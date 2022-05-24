@@ -1,8 +1,7 @@
-function AddTodoForm({
-    todo,
-    onAddFormSubmit,
-    onAddInputChange
-  }) {
+function AddTodoForm({todo,onAddFormSubmit,onAddInputChange}) 
+
+  {
+  console.log(todo);
     return (
        
         <form onSubmit={onAddFormSubmit}>
@@ -10,9 +9,9 @@ function AddTodoForm({
         <div className="form">
         <input
           className="form-control"
-          name="todo"
+          name="name"
           type="text"
-          placeholder="Create new todo"
+          placeholder="Enter task"
           value={todo}
           onChange={onAddInputChange}
         />
